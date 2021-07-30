@@ -1,8 +1,23 @@
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Homepage from './pages/Homepage';
+import './App.css'
 
-function App() {
+
+export default function App() {
   return (
-    <h1>sub</h1>
-  );
-}
 
-export default App;
+    <div>
+      <Router>
+        <div className="App" >
+          <Switch>
+            <Route path="/" exact component={Homepage} />
+            {/* <Route path="/moviedetail/:id" component={MovieDetailPage}/>
+          <Route path="/likedmovies" component={LikedMoviesPage} /> */}
+          </Switch>
+        </div>
+      </Router>
+    </div>
+
+  )
+}
