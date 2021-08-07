@@ -10,7 +10,7 @@ export default function IntoSection() {
                 <p className="intro-sentence">Match Santas randomly. Noday knows who got who!</p>
                 <div className="into-action-btn-container">
                     <Btn id={3} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Sign Up" textColor="white" ></Btn>
-                    <Btn id={4} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Sign Up" textColor="black" borderColor="#D00000" ></Btn>
+                    <Btn id={4} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Log In" textColor="black" borderColor="#D00000" ></Btn>
 
                 </div>
             </div>
@@ -28,9 +28,7 @@ export default function IntoSection() {
             <style jsx>{`
 
                 .Intro-section-wrapper {
-                    border-style: solid;
-                    border-width: 2px;
-                    border-color: red;
+                    
                     box-sizing: border-box;
                     
                     width: 100%;
@@ -43,9 +41,7 @@ export default function IntoSection() {
                 }
 
                 .content-container {
-                    border-style: solid;
-                    border-width: 2px;
-                    border-color: blue;
+                   
                     width: 40%;
                     margin: 0 auto;
                     
@@ -73,15 +69,11 @@ export default function IntoSection() {
                     display: flex;
                     justify-content: space-evenly;
                     
-                    border-style: solid;
-                    border-width: 2px;
-                    border-color: blue;
+                   
                 }
 
                 .img-container{
-                    border-style: solid;
-                    border-width: 2px;
-                    border-color: pink;
+                    
                     width: 50%;
                     margin: 0 auto;
                 
