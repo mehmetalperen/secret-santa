@@ -9,8 +9,8 @@ export default function IntoSection() {
                 <h1 className='intro-title'>Create a Secret Santa</h1>
                 <p className="intro-sentence">Match Santas randomly. Noday knows who got who!</p>
                 <div className="into-action-btn-container">
-                <Btn id={3} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Sign Up" textColor="white" borderColor="#D00000"></Btn>
-                <Btn id={4} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Sign Up" textColor="black" borderColor="#D00000"></Btn>
+                <Btn id={3} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Sign Up" textColor="white" ></Btn>
+                <Btn id={4} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Sign Up" textColor="black" borderColor="#D00000" ></Btn>
 
                 </div>
             </div>
