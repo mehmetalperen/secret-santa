@@ -22,7 +22,10 @@ export default function StaticDesktopNavbar() {
             <style jsx>{`
 
                 .desktop-navbar {
-                    
+                    position: sticky;
+                    top:0;
+                    z-index: 100;
+                    background-color: white;
 
                     display: flex;
                     width: 100%;
