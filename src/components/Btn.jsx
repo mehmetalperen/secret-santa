@@ -1,6 +1,6 @@
 
 
-export default function NavBtn(props) {
+export default function Btn(props) {
 
     
     return (
@@ -14,11 +14,16 @@ export default function NavBtn(props) {
                 ${`#nav-btn-${props.id}`} {
                     background-color: ${props.btnColor};
                     border-style: solid;
-                    border-width: 0px;
+                    border-width: 0.5px;
+                    border-color: ${props.borderColor};
                     font-size: 16px;
                     min-width: 100px;
+                    width: 40%;
                     border-radius: 25px;
                     min-height: 30px;
+                    color: ${props.textColor}
+                    
+                    
 
                 }
                 ${`#nav-btn-${props.id}:hover`} {

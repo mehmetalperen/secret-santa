@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBtn from './NavBtn'
+import Btn from './Btn'
 
 
 export default function StaticDesktopNavbar() {
@@ -12,8 +12,8 @@ export default function StaticDesktopNavbar() {
             </div>
 
             <div className="action-btn-wrapper">
-            <NavBtn id={0} btnColor="#2ED699" btnHoverColor="#109364" btnText="Sign Up"></NavBtn>
-            <NavBtn id={1} btnColor="#E9EB78" btnHoverColor="#D3D724" btnText="Log In"></NavBtn>
+            <Btn id={0} btnColor="#2ED699" btnHoverColor="#109364" btnText="Sign Up" textColor='black' borderColor="#2ED699"></Btn>
+            <Btn id={1} btnColor="#E9EB78" btnHoverColor="#D3D724" btnText="Log In" textColor='black' borderColor="#E9EB78"></Btn>
 
 
             </div>
