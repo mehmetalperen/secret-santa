@@ -56,7 +56,7 @@ export default function CallActionSection() {
 
 
                 
-                `}</style>
+            `}</style>
             
         </div>
     )
