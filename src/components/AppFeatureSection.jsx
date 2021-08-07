@@ -45,9 +45,7 @@ export default function AppFeatureSection() {
                     flex-wrap: wrap	;
                     justify-content: center;
                     background-color: #D00000;
-                    border-style: solid;
-                    border-color: red;
-                    border-width: 2px;
+                    
                     
                 }
 
