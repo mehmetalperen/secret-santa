@@ -5,6 +5,7 @@ import './App.css'
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import { AuthProvider } from './contexts/AuthContext';
+import FurtherActionPage from './pages/FurtherActionPage';
 
 
 export default function App() {
@@ -23,8 +24,8 @@ export default function App() {
                 <Route path="/login" exact component={LoginPage} />
                 <Route path="/signup" exact component={SignupPage} />
 
-                {/* <Route path="/moviedetail/:id" component={MovieDetailPage}/>
-              <Route path="/likedmovies" component={LikedMoviesPage} /> */}
+                {/* <Route path="/moviedetail/:id" component={MovieDetailPage}/> */}
+              <Route path="/further_action_page" component={FurtherActionPage} />
               </Switch>
             </div>
           </AuthProvider>
