@@ -1,5 +1,7 @@
 import React from 'react'
 import Btn from './Btn'
+import { Link } from "react-router-dom";
+
 
 export default function IntoSection() {
     return (
@@ -9,8 +11,14 @@ export default function IntoSection() {
                 <h1 className='intro-title'>Create a Secret Santa</h1>
                 <p className="intro-sentence">Match Santas randomly. Noday knows who got who!</p>
                 <div className="into-action-btn-container">
-                    <Btn id={3} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Sign Up" textColor="white" ></Btn>
-                    <Btn id={4} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Log In" textColor="black" borderColor="#D00000" ></Btn>
+                    <Link className="link-style" to="/signup" style={{ textDecoration: "none" }}>
+                        <Btn id={3} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Sign Up" textColor="white" ></Btn>
+                    </Link>
+                    <Link className="link-style" to="/login" style={{ textDecoration: "none" }}>
+                        <Btn id={4} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Log In" textColor="black" borderColor="#D00000" ></Btn>
+                    </Link>
+
+                    
 
                 </div>
             </div>

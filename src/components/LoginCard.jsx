@@ -4,12 +4,13 @@ import {useAuth} from '../contexts/AuthContext'
 import { Link } from "react-router-dom";
 
 
-export default function SignupCard() {
+
+
+export default function LoginCard() {
 
     const emailRef = useRef()
     const passwordlRef = useRef()
-    const passwordConfirmRef = useRef()
-    const { signup } = useAuth()
+    const { login } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
 
@@ -18,17 +19,14 @@ export default function SignupCard() {
     async function handleSubmit ( event ) {
         event.preventDefault();
 
-        if (passwordlRef.current.value !== passwordConfirmRef.current.value) {
-            return setError('Passwords do not match')
-        }
 
         try {
             setError('')
             setLoading(true)
-            await signup(emailRef.current.value, passwordlRef.current.value)
+            await login(emailRef.current.value, passwordlRef.current.value)
 
         } catch {
-            setError('Failled to create an account')
+            setError('Failled to log in')
         }
         setLoading(false)
     }
@@ -39,7 +37,7 @@ export default function SignupCard() {
         <>
             <Card>
                 <Card.Body>
-                    <h2 className="text-center mb-4">Sign Up</h2>
+                    <h2 className="text-center mb-4">Log In</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
@@ -50,15 +48,12 @@ export default function SignupCard() {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" ref={passwordlRef} required></Form.Control>
                         </Form.Group>
-                        <Form.Group id="password-confirm">
-                            <Form.Label>Password Confirmation</Form.Label>
-                            <Form.Control type="password" ref={passwordConfirmRef} required></Form.Control>
-                        </Form.Group>
-                        <Button disabled={loading} className="w-100 text-center mt-2" type="submit" variant="danger">Sign Up</Button>
+      
+                        <Button disabled={loading} className="w-100 text-center mt-2" type="submit" variant="danger">Log In</Button>
                     </Form>
                 </Card.Body>
 
-                <div className="w-100 text-center mt-w">Already have an account? <Link to="/login">Log In</Link></div>
+                <div className="w-100 text-center mt-w">Need an account? <Link to="/signup">Sign Up</Link></div>
             </Card>
         </>
     )
