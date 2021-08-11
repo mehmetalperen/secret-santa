@@ -2,3 +2,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.link-style {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}

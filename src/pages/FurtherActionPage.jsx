@@ -58,9 +58,6 @@ export default function FurtherActionPage() {
                     flex-wrap: nowrap;
                     justify-content: center;
 
-                    border-style: solid;
-                    border-color: black;
-                    border-width: 2px;
 
                 }
 

@@ -63,12 +63,7 @@ export default function StaticDesktopNavbar() {
                     align-items: center;
                 }
 
-                .link-style {
-                    justify-content: center;
-                    display:flex;
-                    width: 100%;
-                    
-                }
+   
                 `}</style>
 
         </div>

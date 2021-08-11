@@ -37,7 +37,7 @@ export default function Btn(props) {
                 @media only screen and (max-width: 900px) {
 
                     ${`#nav-btn-${props.id}`} {
-                        width: 100%;
+                        width: 90%;
 
 
                     }
