@@ -10,7 +10,7 @@ export default function LoginCard() {
 
     const emailRef = useRef()
     const passwordlRef = useRef()
-    const { login } = useAuth()
+    const { login, currentUser } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory();
@@ -25,7 +25,7 @@ export default function LoginCard() {
             setError('')
             setLoading(true)
             await login(emailRef.current.value, passwordlRef.current.value)
-            history.push("/further_action_page")
+            history.push(`/further_action_page/${currentUser.uid}`)
 
         } catch {
             setError('Failled to log in')

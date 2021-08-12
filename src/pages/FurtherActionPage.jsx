@@ -2,11 +2,16 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Btn from '../components/Btn'
 import { Link } from "react-router-dom";
+import {useAuth} from '../contexts/AuthContext'
+
 
 
 
 
 export default function FurtherActionPage() {
+
+    const { currentUser } = useAuth()
+
     return (
 
         <div className="FurtherActionPage">
@@ -14,10 +19,11 @@ export default function FurtherActionPage() {
 
             <div className="further-action-page-container">
 
+                
                 <div className="action-event-container">
                     <img src="../join-santa-event-img.svg" alt="" className="action-img" />
                     <div className="btn-container">
-                        <Link className="link-style" to="/create_event_page" style={{ textDecoration: "none" }}>
+                        <Link className="link-style" to={`/join_event_page/${currentUser.uid}`} style={{ textDecoration: "none" }}>
                             <Btn id={7} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Join Event" textColor="white" ></Btn>
                         </Link>
 
@@ -27,7 +33,7 @@ export default function FurtherActionPage() {
                 <div className="action-event-container">
                     <img src="../create-santa-event-img.svg" alt="" className="action-img" />
                     <div className="btn-container">
-                        <Link className="link-style" to="/join_event_page" style={{ textDecoration: "none" }}>
+                        <Link className="link-style" to={`/create_event_page/${currentUser.uid}`} style={{ textDecoration: "none" }}>
                                 <Btn id={8} btnColor="#FFFFFF" btnHoverColor="#FF6584" btnText="Create Event" textColor="black" borderColor="#D00000" ></Btn>
                         </Link>
                     </div>

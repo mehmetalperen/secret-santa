@@ -9,7 +9,7 @@ export default function IntoSection() {
 
             <div className="content-container">
                 <h1 className='intro-title'>Create a Secret Santa</h1>
-                <p className="intro-sentence">Match Santas randomly. Noday knows who got who!</p>
+                <p className="intro-sentence">Match Santas randomly. Nobody knows who got who!</p>
                 <div className="into-action-btn-container">
                 <Link className="link-style" to="/signup" style={{ textDecoration: "none" }}>
                     <Btn id={3} btnColor="#D00000" btnHoverColor="#FF6584" btnText="Sign Up" textColor="white" ></Btn>
